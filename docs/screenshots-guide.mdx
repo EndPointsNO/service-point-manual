@@ -29,6 +29,12 @@ Denne siden beskriver hvordan screenshots skal tas og legges inn i repoet.
 4. Lagre som `PNG` med riktig filnavn.
 5. Legg filen i `static/img/pda/`.
 
+## Anbefalt utsnitt
+
+- Ta med hele skjermbildet, inkludert topptekst og handlingsknapper.
+- Behold status som viser `OK`, grønn hake eller aktiv meny når det er del av kontrollen.
+- Ikke zoom så langt inn at brukeren mister kontekst.
+
 ## Hvordan referere til bildet i docs
 
 Bruk samme filnavn i docs-siden:
@@ -42,6 +48,14 @@ Bruk samme filnavn i docs-siden:
 - Ett screenshot per kritiske skjermbilde eller bekreftelse
 - Vis alltid `OK`-skjerm før utlevering når prosedyren krever det
 - Ikke inkluder personopplysninger i nye screenshots uten å maskere dem
+- Sjekk at filnavn og docs-lenke er identiske før du committer
+
+## Arbeidsflyt
+
+1. Finn manglende bilder i [Screenshot backlog](./screenshot-backlog).
+2. Ta eller eksporter skjermbilder.
+3. Legg dem i `static/img/pda/` med riktig navn.
+4. Kjør `npm run build` for å sjekke at alle referanser virker.
 
 :::note
 Frem til endelige screenshots er lagt inn, brukes TODO-plassholdere med korrekt filnavn slik at det er tydelig hva som mangler.

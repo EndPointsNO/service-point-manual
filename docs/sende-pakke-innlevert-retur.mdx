@@ -5,16 +5,16 @@ description: Registrer pakker som kunden leverer inn med ferdig etikett.
 ---
 
 import ProcedureStep from '@site/src/components/ProcedureStep';
+import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
 
 # Sende pakke / Innlevert retur
 
-## Når brukes dette?
+<ProcedureIntro
+  whenUsed="Når kunden leverer inn en pakke med ferdig etikett som skal sendes videre eller registreres som retur."
+  goal="Registrere innleveringen korrekt, sende kvittering og plassere pakken i riktig returflyt."
+/>
 
-Når kunden leverer inn en pakke med ferdig etikett som skal sendes videre eller registreres som retur.
-
-## Mål
-
-Registrere innleveringen korrekt, sende kvittering og plassere pakken i riktig returflyt.
+## Steg for steg
 
 <ProcedureStep
   number={1}
@@ -71,3 +71,11 @@ Når PDA viser at registreringen er fullført, legg pakken blant returene eller 
 - Kunden har bare referanse og trenger etikett først: bruk [Print etikett](./print-etikett).
 - Kvittering kan ikke sendes: kontroller at minst ett kontaktfelt er fylt inn.
 - Printeren svarer ikke i etikettflyten: se [Printer-problemer](./printer-problemer).
+
+<RelatedLinks
+  links={[
+    {label: 'Print etikett', to: '/print-etikett'},
+    {label: 'Uavhentet retur', to: '/uavhentet-retur'},
+    {label: 'Printer-problemer', to: '/printer-problemer'},
+  ]}
+/>

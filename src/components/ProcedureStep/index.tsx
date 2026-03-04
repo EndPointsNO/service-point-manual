@@ -27,6 +27,7 @@ export default function ProcedureStep({
         <p className={styles.placeholderLabel}>Screenshot TODO</p>
         <p className={styles.placeholderText}>{alt}</p>
         <code>{image}</code>
+        <img className={styles.image} src={image} alt={alt} />
       </div>
     </section>
   );

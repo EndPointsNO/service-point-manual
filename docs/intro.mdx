@@ -5,9 +5,54 @@ slug: /
 description: Hva håndboken brukes til, hvem den er for, og hvordan den er bygget opp.
 ---
 
+import {QuickLinks} from '@site/src/components/ManualLayout';
+
 # PostNord Service Point / Mypack Collect-håndbok
 
-Denne håndboken er laget for ansatte som bruker PDA/håndterminal til å motta, plassere, utlevere og returnere pakker i PostNord Service Point.
+Dette er arbeidsflaten for daglig drift i Service Point. Bruk hurtigvalgene under når du trenger en konkret prosedyre raskt, og bruk sidebaren når du skal vedlikeholde eller utvide manualen.
+
+## Hurtigvalg
+
+<QuickLinks
+  items={[
+    {
+      title: 'Ankomst sjåfør',
+      to: '/ankomst-sjafor',
+      description: 'Registrer ankomne pakker og gi dem riktig hyllelokasjon.',
+      tag: 'Motta pakker',
+    },
+    {
+      title: 'Ordinær utlevering',
+      to: '/utlevering-ordinaer',
+      description: 'Skann hentekode, finn riktig kolli og fullfør utleveringen trygt.',
+      tag: 'Utlevering',
+    },
+    {
+      title: 'ID-kontroll',
+      to: '/utlevering-id-kontroll',
+      description: 'Brukes når PDA krever legitimering før pakken kan leveres ut.',
+      tag: 'Utlevering',
+    },
+    {
+      title: 'Print etikett',
+      to: '/print-etikett',
+      description: 'Skriv ut etikett når kunden trenger retur- eller sendeetikett.',
+      tag: 'Sending',
+    },
+    {
+      title: 'Uavhentet retur',
+      to: '/uavhentet-retur',
+      description: 'Klargjør pakker som har passert hentefristen og skal i retur.',
+      tag: 'Retur',
+    },
+    {
+      title: 'Feil og avvik',
+      to: '/feil-og-avvik-oversikt',
+      description: 'Start her når noe ikke stemmer i PDA, printer eller lokasjonsflyten.',
+      tag: 'Support',
+    },
+  ]}
+/>
 
 ## Hva er dette?
 
@@ -26,6 +71,7 @@ Denne håndboken er laget for ansatte som bruker PDA/håndterminal til å motta,
 - Start i riktig oppgave i sidebaren, ikke i gammel kapittelrekkefølge.
 - Følg nummererte steg og stopp ved hvert kontrollpunkt.
 - Bruk feilsidene når PDA eller printer ikke oppfører seg som forventet.
+- Se [Hurtigkort](./hurtigkort) når du trenger en printvennlig oppsummering ved disken eller bakrommet.
 - Legg inn faktiske screenshots fortløpende ved å følge [Screenshots-guide](./screenshots-guide).
 
 :::tip Tips
@@ -43,6 +89,10 @@ Nøkkelord i denne håndboken følger ordlyden i PDA-menyene, for eksempel `Anko
 ## Kontakt
 
 Se [Kontakt og support](./kontakt) for telefonnumre og anbefalt eskalering.
+
+## Hvor endrer du hurtigvalg?
+
+Kortene på denne startsiden oppdateres i denne filen, `docs/intro.mdx`.
 
 :::warning Viktig
 PDF-en som denne manualen bygger på oppgir versjon `V1.1`, men inneholder begrenset detaljert endringshistorikk. Se [Endringslogg](./endringslogg) for hva som er kjent og hva som må fylles inn senere.

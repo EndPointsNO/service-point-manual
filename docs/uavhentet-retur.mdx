@@ -5,16 +5,16 @@ description: Klargjør pakker som har ligget ut over fristen og skal sendes tilb
 ---
 
 import ProcedureStep from '@site/src/components/ProcedureStep';
+import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
 
 # Uavhentet retur
 
-## Når brukes dette?
+<ProcedureIntro
+  whenUsed="Når PDA viser pakker på Uavhentet retur som har passert hentefristen og skal sendes tilbake med sjåfør."
+  goal="Finne alle utløpte pakker, merke dem og gjøre dem klare for retur."
+/>
 
-Når PDA viser pakker på `Uavhentet retur` som har passert hentefristen og skal sendes tilbake med sjåfør.
-
-## Mål
-
-Finne alle utløpte pakker, merke dem og gjøre dem klare for retur.
+## Steg for steg
 
 <ProcedureStep
   number={1}
@@ -59,3 +59,11 @@ Legg pakkene sammen med innleverte returer på en måte som tåler transport. Tr
 
 - Etikett kommer ikke ut: se [Printer-problemer](./printer-problemer).
 - Pakken er ikke å finne i hyllen: se [Mangler ankomstregistrering](./mangler-ankomstregistrering).
+
+<RelatedLinks
+  links={[
+    {label: 'Sende pakke / Innlevert retur', to: '/sende-pakke-innlevert-retur'},
+    {label: 'Printer-problemer', to: '/printer-problemer'},
+    {label: 'Mangler ankomstregistrering', to: '/mangler-ankomstregistrering'},
+  ]}
+/>

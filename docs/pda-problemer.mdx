@@ -4,21 +4,50 @@ title: PDA-problemer
 description: Rask feilsøking når håndterminalen henger, ikke reagerer eller skjermen er svart.
 ---
 
+import ProcedureStep from '@site/src/components/ProcedureStep';
+import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
+
 # PDA-problemer
 
-## Når brukes dette?
+<ProcedureIntro
+  whenUsed="Når håndterminalen ikke reagerer på berøring, skjermen er mørk, eller den ikke fungerer som forventet under en prosess."
+  goal="Få PDA-en tilbake i drift uten å avbryte mer enn nødvendig."
+/>
 
-Når håndterminalen ikke reagerer på berøring, skjermen er mørk, eller den ikke fungerer som forventet under en prosess.
+## Steg for steg
 
-## Mål
+<ProcedureStep
+  number={1}
+  title="Gjør hard omstart når touch har låst seg"
+  image="/img/pda/pda-problemer-01-hard-omstart.png"
+  alt="TODO: Skjermbilde – hard omstart av PDA"
+>
+Hold inne `Power` i `10-15 sekunder` til PDA-en skrur seg av. Start den deretter på nytt.
 
-Få PDA-en tilbake i drift uten å avbryte mer enn nødvendig.
+![TODO: Skjermbilde – hard omstart av PDA](/img/pda/pda-problemer-01-hard-omstart.png)
+</ProcedureStep>
 
-## Feilsøking
+<ProcedureStep
+  number={2}
+  title="Start på nytt ved svart skjerm"
+  image="/img/pda/pda-problemer-02-svart-skjerm.png"
+  alt="TODO: Skjermbilde – svart skjerm på PDA"
+>
+Hvis skjermen er helt mørk, men enheten lader, gjør samme omstart med `Power`.
 
-1. Hvis touch har låst seg: hold inne `Power` i `10-15 sekunder` til PDA-en skrur seg av. Start den deretter på nytt.
-2. Hvis skjermen er helt mørk, men enheten lader: gjør samme omstart med `Power`.
-3. Prøv skanningen på nytt når enheten er helt oppe, før du starter en ny prosess i PDA-en.
+![TODO: Skjermbilde – svart skjerm på PDA](/img/pda/pda-problemer-02-svart-skjerm.png)
+</ProcedureStep>
+
+<ProcedureStep
+  number={3}
+  title="Test prosessen på nytt"
+  image="/img/pda/pda-problemer-03-test-skanning.png"
+  alt="TODO: Skjermbilde – test skanning etter omstart"
+>
+Prøv skanningen på nytt når enheten er helt oppe, før du starter en ny prosess i PDA-en.
+
+![TODO: Skjermbilde – test skanning etter omstart](/img/pda/pda-problemer-03-test-skanning.png)
+</ProcedureStep>
 
 :::note NB
 PDF-en beskriver hard omstart som første tiltak ved låst touch eller svart skjerm.
@@ -33,3 +62,11 @@ PDF-en beskriver hard omstart som første tiltak ved låst touch eller svart skj
 
 - Skjermen virker, men skanning eller meny oppfører seg feil: lukk prosessen og start på nytt.
 - Problemet gjelder bare utskrift eller tilkobling: se [Printer-problemer](./printer-problemer).
+
+<RelatedLinks
+  links={[
+    {label: 'Printer-problemer', to: '/printer-problemer'},
+    {label: 'Feil og avvik - oversikt', to: '/feil-og-avvik-oversikt'},
+    {label: 'Kontakt og support', to: '/kontakt'},
+  ]}
+/>

@@ -1,0 +1,72 @@
+---
+id: hurtigkort
+title: Hurtigkort
+description: Printvennlig oppsummering av de viktigste Service Point-rutinene.
+---
+
+# Hurtigkort
+
+Denne siden er laget for utskrift eller rask oppslag ved disken. Hold punktene korte og oppdater dem når hovedprosedyrene endres.
+
+## Ankomst sjåfør
+
+- Skann hyllelokasjon først.
+- Skann alle kolli som skal inn på den lokasjonen.
+- Fullfør med pil tilbake.
+
+Kontrollpunkt:
+- Både lokasjon og kolli-ID må være skannet.
+- Siste skannede lokasjon blir gjeldende.
+
+## Ordinær utlevering
+
+- Skann eller tast inn hentekode.
+- Finn pakken via avsender, mottaker, lokasjon og kollinummer.
+- Skann kolliet til linjen blir grønn.
+- Ta signatur og trykk `OK`.
+
+Kontrollpunkt:
+- Ikke lever ut før grønn bekreftelse og `OK` vises.
+
+## ID-kontroll
+
+- Start som vanlig utlevering.
+- Utfør ID-kontroll når PDA krever det.
+- Tast inn tre siste sifre i fødselsnummer eller bruk alternativ ID.
+- Ta signatur og trykk `OK`.
+
+Kontrollpunkt:
+- Sjekk at person og mottaker stemmer før pakken utleveres.
+
+## Print etikett
+
+- Kontroller at skriver er tilkoblet.
+- Skann QR-/strekkode eller tast inn referanse.
+- Velg om kunden skal ta med etiketten eller levere inn pakken nå.
+
+Kontrollpunkt:
+- Ny etikett skal over gammel etikett hvis pakken leveres inn med en gang.
+
+## Uavhentet retur
+
+- Finn pakkene i listen.
+- Skann dem til linjen blir grønn.
+- Merk om med etikett hvis mulig.
+- Stable returene forsvarlig og fullfør med pil tilbake.
+
+Kontrollpunkt:
+- Gjør dette i fast morgen- eller kveldsrutine.
+
+## QR-koder (valgfritt)
+
+QR-bilder genereres ikke automatisk i repoet ennå. Når dere vil lage dem, bør de peke til de viktigste relative rutene:
+
+- `/ankomst-sjafor`
+- `/utlevering-ordinaer`
+- `/utlevering-id-kontroll`
+- `/print-etikett`
+- `/uavhentet-retur`
+- `/feil-og-avvik-oversikt`
+
+![TODO: QR-kode – ankomst sjåfør](/img/pda/hurtigkort-01-qr-ankomst-sjafor.png)
+![TODO: QR-kode – ordinær utlevering](/img/pda/hurtigkort-02-qr-utlevering-ordinaer.png)

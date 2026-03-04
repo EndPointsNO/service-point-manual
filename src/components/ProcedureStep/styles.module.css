@@ -59,3 +59,11 @@
 .placeholder code {
   word-break: break-all;
 }
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 0.9rem;
+  border-radius: 14px;
+}

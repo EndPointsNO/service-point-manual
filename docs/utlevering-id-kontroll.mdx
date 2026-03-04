@@ -5,16 +5,16 @@ description: Utlevering der mottaker eller fullmektig må legitimeres før signa
 ---
 
 import ProcedureStep from '@site/src/components/ProcedureStep';
+import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
 
 # Utlevering med ID-kontroll
 
-## Når brukes dette?
+<ProcedureIntro
+  whenUsed="Når PDA viser ID Kontroll og krever kontroll av mottaker eller fullmektig før utlevering."
+  goal="Bekrefte riktig identitet før pakken signeres og utleveres."
+/>
 
-Når PDA viser `ID Kontroll` og krever kontroll av mottaker eller fullmektig før utlevering.
-
-## Mål
-
-Bekrefte riktig identitet før pakken signeres og utleveres.
+## Steg for steg
 
 <ProcedureStep
   number={1}
@@ -82,3 +82,11 @@ Trykk `OK`. Lever først ut pakken når sluttbildet bekrefter at pakken kan utle
 - Navnet på skjermen stemmer ikke med personen foran deg: sjekk om riktig fullmakt ligger i nedtrekksmenyen.
 - Norsk fødselsnummer mangler: bruk alternativet for ID uten norsk fødselsnummer.
 - PDA henger i kontrollbildet: se [PDA-problemer](./pda-problemer).
+
+<RelatedLinks
+  links={[
+    {label: 'Utlevering - oversikt', to: '/utlevering-oversikt'},
+    {label: 'Ordinær utlevering', to: '/utlevering-ordinaer'},
+    {label: 'PDA-problemer', to: '/pda-problemer'},
+  ]}
+/>

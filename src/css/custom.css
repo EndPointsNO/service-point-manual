@@ -76,3 +76,39 @@ body {
     max-width: 100%;
   }
 }
+
+@media print {
+  body.docs-doc-id-hurtigkort .navbar,
+  body.docs-doc-id-hurtigkort .footer,
+  body.docs-doc-id-hurtigkort .theme-doc-sidebar-container,
+  body.docs-doc-id-hurtigkort .theme-doc-toc-desktop,
+  body.docs-doc-id-hurtigkort .pagination-nav,
+  body.docs-doc-id-hurtigkort .theme-edit-this-page,
+  body.docs-doc-id-hurtigkort .theme-back-to-top-button {
+    display: none !important;
+  }
+
+  body.docs-doc-id-hurtigkort .main-wrapper,
+  body.docs-doc-id-hurtigkort .container,
+  body.docs-doc-id-hurtigkort .row,
+  body.docs-doc-id-hurtigkort .col {
+    width: 100% !important;
+    max-width: none !important;
+    flex: 1 1 auto !important;
+  }
+
+  body.docs-doc-id-hurtigkort .theme-doc-markdown {
+    max-width: none;
+    font-size: 12px;
+  }
+
+  body.docs-doc-id-hurtigkort .theme-doc-markdown h1 {
+    margin-top: 0;
+    font-size: 26px;
+  }
+
+  body.docs-doc-id-hurtigkort .theme-doc-markdown h2 {
+    margin-top: 1.25rem;
+    break-after: avoid;
+  }
+}

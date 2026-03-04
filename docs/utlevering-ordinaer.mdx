@@ -5,16 +5,16 @@ description: Standard utlevering med hentekode, skann, signatur og OK-bekreftels
 ---
 
 import ProcedureStep from '@site/src/components/ProcedureStep';
+import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
 
 # Ordinær utlevering
 
-## Når brukes dette?
+<ProcedureIntro
+  whenUsed="Når kunden henter en pakke og PDA ikke krever ekstra ID-kontroll utover vanlig utleveringsflyt."
+  goal="Riktig pakke skal finnes, skannes, signeres og bekreftes før den leveres ut."
+/>
 
-Når kunden henter en pakke og PDA ikke krever ekstra ID-kontroll utover vanlig utleveringsflyt.
-
-## Mål
-
-Riktig pakke skal finnes, skannes, signeres og bekreftes før den leveres ut.
+## Steg for steg
 
 <ProcedureStep
   number={1}
@@ -86,3 +86,11 @@ Hvis du vil fjerne et kolli fra utleveringslisten, bruk menyen med tre prikker v
 - Feil pakke hentet fra hyllen: kontroller lokasjon og kollinummer på nytt.
 - Kunden får ikke signert: se [PDA-problemer](./pda-problemer).
 - Pakken finnes ikke der skjermen sier: se [Mangler ankomstregistrering](./mangler-ankomstregistrering).
+
+<RelatedLinks
+  links={[
+    {label: 'Utlevering - oversikt', to: '/utlevering-oversikt'},
+    {label: 'Utlevering med ID-kontroll', to: '/utlevering-id-kontroll'},
+    {label: 'Mangler ankomstregistrering', to: '/mangler-ankomstregistrering'},
+  ]}
+/>

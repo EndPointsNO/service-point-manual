@@ -5,16 +5,16 @@ description: Registrer ankomne pakker og knytt dem til riktig hyllelokasjon.
 ---
 
 import ProcedureStep from '@site/src/components/ProcedureStep';
+import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
 
 # Ankomst sjåfør
 
-## Når brukes dette?
+<ProcedureIntro
+  whenUsed="Når sjåføren leverer inn pakker som skal registreres og plasseres i hyller for senere henting."
+  goal="Hver pakke skal få riktig hyllelokasjon slik at den blir enkel å finne igjen ved utlevering."
+/>
 
-Når sjåføren leverer inn pakker som skal registreres og plasseres i hyller for senere henting.
-
-## Mål
-
-Hver pakke skal få riktig hyllelokasjon slik at den blir enkel å finne igjen ved utlevering.
+## Steg for steg
 
 <ProcedureStep
   number={1}
@@ -67,3 +67,11 @@ PDF-en anbefaler å skanne esker først og poser etterpå. Det gjør sorteringen
 - Feilmelding ved ankomstregistrering: følg teksten i PDA og kontroller at riktig etikett er skannet.
 - Fysisk pakke uten lokasjon i systemet: se [Mangler ankomstregistrering](./mangler-ankomstregistrering).
 - Problemer med skanning: se [PDA-problemer](./pda-problemer).
+
+<RelatedLinks
+  links={[
+    {label: 'Start arbeidsdagen', to: '/start-dagen'},
+    {label: 'Mangler ankomstregistrering', to: '/mangler-ankomstregistrering'},
+    {label: 'Feil og avvik - oversikt', to: '/feil-og-avvik-oversikt'},
+  ]}
+/>

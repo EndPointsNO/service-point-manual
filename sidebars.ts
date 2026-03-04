@@ -4,8 +4,8 @@ const sidebars: SidebarsConfig = {
   manualSidebar: [
     {
       type: 'category',
-      label: 'Introduksjon',
-      items: ['intro', 'screenshots-guide'],
+      label: 'Start her',
+      items: ['intro', 'hurtigkort', 'screenshots-guide', 'screenshot-backlog'],
     },
     {
       type: 'category',
@@ -20,12 +20,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Utlever pakker',
-      items: [
-        'utlevering-oversikt',
-        'utlevering-ordinaer',
-        'utlevering-id-kontroll',
-        'utlevering-etterkrav',
-      ],
+      items: ['utlevering-oversikt', 'utlevering-ordinaer', 'utlevering-id-kontroll'],
     },
     {
       type: 'category',
@@ -41,6 +36,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Feil og avvik',
       items: [
+        'feil-og-avvik-oversikt',
         'mangler-ankomstregistrering',
         'pda-problemer',
         'printer-problemer',

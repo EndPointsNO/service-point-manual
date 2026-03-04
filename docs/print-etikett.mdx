@@ -5,16 +5,16 @@ description: Skriv ut etikett til kunde for sending eller retur.
 ---
 
 import ProcedureStep from '@site/src/components/ProcedureStep';
+import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
 
 # Print etikett
 
-## Når brukes dette?
+<ProcedureIntro
+  whenUsed="Når kunden trenger en etikett for å sende en pakke eller levere inn en retur."
+  goal="Skrive ut riktig etikett og avgjøre om kunden bare skal ta den med seg, eller om pakken også skal registreres innlevert med en gang."
+/>
 
-Når kunden trenger en etikett for å sende en pakke eller levere inn en retur.
-
-## Mål
-
-Skrive ut riktig etikett og avgjøre om kunden bare skal ta den med seg, eller om pakken også skal registreres innlevert med en gang.
+## Steg for steg
 
 <ProcedureStep
   number={1}
@@ -59,3 +59,11 @@ Hvis kunden også skal levere inn pakken, sett ny etikett over gammel etikett og
 
 - Ingen utskrift: se [Printer-problemer](./printer-problemer).
 - Kunden vil levere pakken med en gang: gå videre til [Sende pakke / Innlevert retur](./sende-pakke-innlevert-retur).
+
+<RelatedLinks
+  links={[
+    {label: 'Sende pakke / Innlevert retur', to: '/sende-pakke-innlevert-retur'},
+    {label: 'Printer-problemer', to: '/printer-problemer'},
+    {label: 'Screenshots-guide', to: '/screenshots-guide'},
+  ]}
+/>

@@ -5,16 +5,16 @@ description: Følg opp pakker som skal være levert til utleveringsstedet, men i
 ---
 
 import ProcedureStep from '@site/src/components/ProcedureStep';
+import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
 
 # Mangler ankomstregistrering
 
-## Når brukes dette?
+<ProcedureIntro
+  whenUsed="Når en pakke skal være hos dere, men ikke er registrert med hyllelokasjon i systemet."
+  goal="Finne pakken fysisk og få den registrert inn på riktig lokasjon, eller markere den som ikke funnet."
+/>
 
-Når en pakke skal være hos dere, men ikke er registrert med hyllelokasjon i systemet.
-
-## Mål
-
-Finne pakken fysisk og få den registrert inn på riktig lokasjon, eller markere den som ikke funnet.
+## Steg for steg
 
 <ProcedureStep
   number={1}
@@ -58,3 +58,11 @@ Hvis pakken ikke finnes, velg pakken i listen og bruk `Ikke funnet`. Hvis du fan
 
 - Pakken ligger på feil lokasjon: bruk [Ankomst sjåfør](./ankomst-sjafor) for å skanne den inn på nytt.
 - Skanneren leser ikke etiketten: se [PDA-problemer](./pda-problemer).
+
+<RelatedLinks
+  links={[
+    {label: 'Ankomst sjåfør', to: '/ankomst-sjafor'},
+    {label: 'PDA-problemer', to: '/pda-problemer'},
+    {label: 'Feil og avvik - oversikt', to: '/feil-og-avvik-oversikt'},
+  ]}
+/>

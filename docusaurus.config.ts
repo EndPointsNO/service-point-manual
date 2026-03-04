@@ -2,6 +2,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const projectName =
+  process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'service-point-manual';
+const githubOwner = process.env.GITHUB_REPOSITORY_OWNER ?? 'your-github-user';
+const isGithubPagesDeploy =
+  process.env.GITHUB_ACTIONS === 'true' ||
+  process.env.DOCUSAURUS_DEPLOY_TARGET === 'github-pages';
+
 const config: Config = {
   title: 'PostNord Service Point',
   tagline: 'Praktisk håndbok for Mypack Collect og Service Point-rutiner',
@@ -12,10 +19,15 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
-  organizationName: 'postnord',
-  projectName: 'service-point-manual',
+  url:
+    process.env.DOCUSAURUS_URL ??
+    process.env.GITHUB_PAGES_URL ??
+    `https://${githubOwner}.github.io`,
+  baseUrl:
+    process.env.DOCUSAURUS_BASE_URL ??
+    (isGithubPagesDeploy ? `/${projectName}/` : '/'),
+  organizationName: githubOwner,
+  projectName,
 
   onBrokenLinks: 'throw',
 
@@ -82,6 +94,12 @@ const config: Config = {
           position: 'left',
           label: 'Endringslogg',
         },
+        {
+          type: 'doc',
+          docId: 'hurtigkort',
+          position: 'left',
+          label: 'Hurtigkort',
+        },
         {type: 'search', position: 'right'},
       ],
     },
@@ -105,6 +123,11 @@ const config: Config = {
               label: 'Screenshots-guide',
               to: '/screenshots-guide',
             },
+            {
+              label: 'Screenshot backlog',
+              to: '/screenshot-backlog',
+            },
+            {label: 'Hurtigkort', to: '/hurtigkort'},
             {label: 'Endringslogg', to: '/endringslogg'},
           ],
         },

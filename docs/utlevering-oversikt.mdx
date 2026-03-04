@@ -4,21 +4,19 @@ title: Utlevering - oversikt
 description: Velg riktig utleveringsflyt før du starter.
 ---
 
+import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
+
 # Utlevering - oversikt
 
-## Når brukes dette?
-
-Denne siden brukes for å velge riktig utleveringsrutine før du begynner.
-
-## Mål
-
-Velg riktig flyt med én gang, slik at du ikke må starte prosessen på nytt ved disken.
+<ProcedureIntro
+  whenUsed="Denne siden brukes for å velge riktig utleveringsrutine før du begynner."
+  goal="Velg riktig flyt med en gang, slik at du ikke må starte prosessen på nytt ved disken."
+/>
 
 ## Velg riktig side
 
 - [Ordinær utlevering](./utlevering-ordinaer) når pakken kan utleveres uten ekstra kontroll utover standard skann og signatur.
 - [Utlevering med ID-kontroll](./utlevering-id-kontroll) når PDA krever identitetskontroll og eventuelt fullmaktvalg.
-- [Utlevering med etterkrav](./utlevering-etterkrav) når kunden må betale før utlevering. PDF-en inneholder ikke lenger en full rutine for dette.
 
 ## Før du starter
 
@@ -36,3 +34,11 @@ Velg riktig flyt med én gang, slik at du ikke må starte prosessen på nytt ved
 - Hentekode skannes, men feil pakke hentes: se [Ordinær utlevering](./utlevering-ordinaer)
 - PDA krever ID-kontroll: se [Utlevering med ID-kontroll](./utlevering-id-kontroll)
 - Pakken finnes ikke på lokasjonen: se [Mangler ankomstregistrering](./mangler-ankomstregistrering)
+
+<RelatedLinks
+  links={[
+    {label: 'Ordinær utlevering', to: '/utlevering-ordinaer'},
+    {label: 'Utlevering med ID-kontroll', to: '/utlevering-id-kontroll'},
+    {label: 'Feil og avvik - oversikt', to: '/feil-og-avvik-oversikt'},
+  ]}
+/>
