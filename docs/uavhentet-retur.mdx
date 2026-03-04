@@ -4,50 +4,35 @@ title: Uavhentet retur
 description: Klargjør pakker som har ligget ut over fristen og skal sendes tilbake.
 ---
 
-import ProcedureStep from '@site/src/components/ProcedureStep';
-import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
-
 # Uavhentet retur
 
-<ProcedureIntro
-  whenUsed="Når PDA viser pakker på Uavhentet retur som har passert hentefristen og skal sendes tilbake med sjåfør."
-  goal="Finne alle utløpte pakker, merke dem og gjøre dem klare for retur."
-/>
+## Når brukes dette?
+
+Når PDA viser pakker på `Uavhentet retur` som har passert hentefristen og skal sendes tilbake med sjåfør.
+
+## Mål
+
+Finne alle utløpte pakker, merke dem og gjøre dem klare for retur.
 
 ## Steg for steg
 
-<ProcedureStep
-  number={1}
-  title="Finn pakkene i listen og skann dem"
-  image="/img/pda/uavhentet-retur-01-skann-pakker.png"
-  alt="TODO: Skjermbilde – liste og skann av uavhentet retur"
->
+### Steg 1: Finn pakkene i listen og skann dem
+
 Finn pakkene basert på avsender, mottaker, lokasjon og kollinummer. Skann hver pakke og kontroller at linjen blir grønn.
 
 ![TODO: Skjermbilde – skann uavhentet retur](/img/pda/uavhentet-retur-01-skann-pakker.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={2}
-  title="Merk om pakken"
-  image="/img/pda/uavhentet-retur-02-etikett.png"
-  alt="TODO: Skjermbilde – skriv ut og påfør retur-etikett"
->
+### Steg 2: Merk om pakken
+
 Merk om pakken med etikett fra printeren. Etiketten skal klistres over den gamle etiketten. Hvis printeren ikke gir utskrift, kan pakken likevel sendes i retur.
 
 ![TODO: Skjermbilde – merk om pakken](/img/pda/uavhentet-retur-02-etikett.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={3}
-  title="Stable returene forsvarlig og fullfør"
-  image="/img/pda/uavhentet-retur-03-fullfor.png"
-  alt="TODO: Skjermbilde – fullfør registrering av uavhentet retur"
->
+### Steg 3: Stable returene forsvarlig og fullfør
+
 Legg pakkene sammen med innleverte returer på en måte som tåler transport. Trykk pil tilbake for å fullføre registreringen.
 
 ![TODO: Skjermbilde – fullfør uavhentet retur](/img/pda/uavhentet-retur-03-fullfor.png)
-</ProcedureStep>
 
 ## Kontrollpunkt
 
@@ -60,10 +45,8 @@ Legg pakkene sammen med innleverte returer på en måte som tåler transport. Tr
 - Etikett kommer ikke ut: se [Printer-problemer](./printer-problemer).
 - Pakken er ikke å finne i hyllen: se [Mangler ankomstregistrering](./mangler-ankomstregistrering).
 
-<RelatedLinks
-  links={[
-    {label: 'Sende pakke / Innlevert retur', to: '/sende-pakke-innlevert-retur'},
-    {label: 'Printer-problemer', to: '/printer-problemer'},
-    {label: 'Mangler ankomstregistrering', to: '/mangler-ankomstregistrering'},
-  ]}
-/>
+## Relaterte sider
+
+- [Sende pakke / Innlevert retur](./sende-pakke-innlevert-retur)
+- [Printer-problemer](./printer-problemer)
+- [Mangler ankomstregistrering](./mangler-ankomstregistrering)

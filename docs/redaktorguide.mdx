@@ -1,0 +1,106 @@
+---
+id: redaktorguide
+title: Redaktørguide
+description: Enkel guide for kollegaer som skal oppdatere håndboken uten å jobbe teknisk.
+---
+
+# Redaktørguide
+
+Denne guiden er for deg som skal oppdatere tekst og bilder i håndboken, men som ikke jobber teknisk til vanlig.
+
+## Du kan trygt endre
+
+- tekst i sidene under `docs/`
+- punktlister
+- overskrifter
+- kontrollpunkter
+- vanlige feil
+- lenker mellom sider
+- bildelenker som peker til `static/img/pda/`
+
+## Du bør normalt ikke endre
+
+- `docusaurus.config.ts`
+- `sidebars.ts`
+- filer i `src/components/`
+- `.github/workflows/`
+
+Hvis noe av dette må endres, bør en teknisk ansvarlig gjøre det.
+
+## Slik ser en vanlig side ut
+
+En side er bygget opp med en enkel mal:
+
+1. `Når brukes dette?`
+2. `Mål`
+3. `Steg for steg`
+4. `Kontrollpunkt`
+5. `Vanlige feil`
+6. `Relaterte sider`
+
+## Slik endrer du tekst
+
+1. Åpne riktig side i `docs/`
+2. Finn teksten du vil endre
+3. Skriv i vanlig tekst, punktlister og overskrifter
+4. Behold eksisterende struktur så langt det går
+
+## Slik redigerer du i GitHub
+
+1. Åpne repoet på GitHub.
+2. Gå til mappen `docs/`.
+3. Åpne siden du vil endre.
+4. Klikk på blyant-ikonet `Edit this file`.
+5. Gjør endringen din i teksten.
+6. Scroll ned og velg:
+   - `Commit directly to this branch` hvis du har avtalt å jobbe direkte i `main`
+   - eller opprett en egen branch hvis dere vil at noen skal se over endringen først
+7. Lagre endringen
+
+## Når bør du lage egen branch?
+
+Lag egen branch hvis du:
+
+- endrer flere sider samtidig
+- legger inn mange nye screenshots
+- er usikker på formulering eller struktur
+- vil at noen andre skal kvalitetssikre før publisering
+
+Bruk direkte commit hvis du bare retter:
+
+- skrivefeil
+- små tekstfeil
+- en enkel lenke
+- ett bilde med samme filnavn
+
+## Slik endrer du et bilde
+
+1. Finn bildefilen i `static/img/pda/`
+2. Bytt den ut med ny fil med samme navn
+3. Hvis du må bruke nytt navn, oppdater også bildeadressen i docs-siden
+4. Kryss av i [Screenshot backlog](./screenshot-backlog) hvis bildet nå er på plass
+
+## Slik legger du til et nytt steg
+
+Eksempel:
+
+```md
+### Steg 4: Bekreft valget
+
+Kontroller at riktig valg er gjort før du går videre.
+
+![TODO: Skjermbilde – bekreft valget](/img/pda/eksempel-04-bekreft-valget.png)
+```
+
+## Gode regler
+
+- Skriv kort og konkret
+- Bruk samme ord som i PDA-en
+- Ikke legg inn personopplysninger i screenshots
+- Ikke slett relaterte lenker uten å vite hvorfor de finnes
+
+## Hvis du er usikker
+
+- Se [Arbeidsflyt for innhold](./content-workflow)
+- Se [Screenshots-guide](./screenshots-guide)
+- Be en teknisk ansvarlig om hjelp før du endrer struktur eller oppsett

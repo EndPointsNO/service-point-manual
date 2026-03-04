@@ -4,50 +4,35 @@ title: Printer-problemer
 description: Rask feilsøking for etikettprinter og tilkobling mot PDA.
 ---
 
-import ProcedureStep from '@site/src/components/ProcedureStep';
-import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
-
 # Printer-problemer
 
-<ProcedureIntro
-  whenUsed="Når etiketter ikke skrives ut, skriveren ikke kobler til, eller skriverlyset ikke blir klart."
-  goal="Gjenopprette utskrift og tilkobling så raskt som mulig."
-/>
+## Når brukes dette?
+
+Når etiketter ikke skrives ut, skriveren ikke kobler til, eller skriverlyset ikke blir klart.
+
+## Mål
+
+Gjenopprette utskrift og tilkobling så raskt som mulig.
 
 ## Steg for steg
 
-<ProcedureStep
-  number={1}
-  title="Kalibrer printeren ved fysisk feil"
-  image="/img/pda/printer-problemer-01-kalibrering.png"
-  alt="TODO: Skjermbilde – kalibrering av etikettprinter"
->
+### Steg 1: Kalibrer printeren ved fysisk feil
+
 Hold inne `Feed`-knappen til lyset først blinker raskt én gang og deretter to ganger. Slipp etter to blink.
 
 ![TODO: Skjermbilde – kalibrering av etikettprinter](/img/pda/printer-problemer-01-kalibrering.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={2}
-  title="Konfigurer skriveren på nytt"
-  image="/img/pda/printer-problemer-02-feed-tre-blink.png"
-  alt="TODO: Skjermbilde – feed-knapp med tre blink"
->
+### Steg 2: Konfigurer skriveren på nytt
+
 Hvis PDA ikke kobler til printeren, hold inne `Feed` til tre raske blink og slipp. Printeren konfigurerer seg på nytt.
 
 ![TODO: Skjermbilde – feed-knapp med tre blink](/img/pda/printer-problemer-02-feed-tre-blink.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={3}
-  title="Kontroller strøm og etikettrull"
-  image="/img/pda/printer-problemer-03-etikettrull.png"
-  alt="TODO: Skjermbilde – riktig plassering av etikettrull"
->
+### Steg 3: Kontroller strøm og etikettrull
+
 Koble fra strømmen, vent litt og koble til igjen. Prøv på nytt når skriverlyset er grønt, og kontroller at etikettrullen står riktig.
 
 ![TODO: Skjermbilde – riktig plassering av etikettrull](/img/pda/printer-problemer-03-etikettrull.png)
-</ProcedureStep>
 
 :::tip Tips
 Vent alltid til printerlyset er grønt før du forsøker ny tilkobling fra PDA.
@@ -63,10 +48,8 @@ Vent alltid til printerlyset er grønt før du forsøker ny tilkobling fra PDA.
 - `Skriver tilkoblet` vises ikke i PDA: start med tilkobling og konfigurasjon på nytt.
 - Etiketten kommer delvis ut eller skjevt: kjør kalibrering.
 
-<RelatedLinks
-  links={[
-    {label: 'Print etikett', to: '/print-etikett'},
-    {label: 'PDA-problemer', to: '/pda-problemer'},
-    {label: 'Feil og avvik - oversikt', to: '/feil-og-avvik-oversikt'},
-  ]}
-/>
+## Relaterte sider
+
+- [Print etikett](./print-etikett)
+- [PDA-problemer](./pda-problemer)
+- [Feil og avvik - oversikt](./feil-og-avvik-oversikt)

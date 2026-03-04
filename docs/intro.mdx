@@ -5,94 +5,68 @@ slug: /
 description: Hva håndboken brukes til, hvem den er for, og hvordan den er bygget opp.
 ---
 
-import {QuickLinks} from '@site/src/components/ManualLayout';
-
 # PostNord Service Point / Mypack Collect-håndbok
 
-Dette er arbeidsflaten for daglig drift i Service Point. Bruk hurtigvalgene under når du trenger en konkret prosedyre raskt, og bruk sidebaren når du skal vedlikeholde eller utvide manualen.
+Bruk denne siden som startpunkt i løpet av vakten. Velg oppgaven du skal utføre nå, eller gå til feilsøking hvis noe stopper opp.
 
-## Hurtigvalg
+## Jeg skal...
 
-<QuickLinks
-  items={[
-    {
-      title: 'Ankomst sjåfør',
-      to: '/ankomst-sjafor',
-      description: 'Registrer ankomne pakker og gi dem riktig hyllelokasjon.',
-      tag: 'Motta pakker',
-    },
-    {
-      title: 'Ordinær utlevering',
-      to: '/utlevering-ordinaer',
-      description: 'Skann hentekode, finn riktig kolli og fullfør utleveringen trygt.',
-      tag: 'Utlevering',
-    },
-    {
-      title: 'ID-kontroll',
-      to: '/utlevering-id-kontroll',
-      description: 'Brukes når PDA krever legitimering før pakken kan leveres ut.',
-      tag: 'Utlevering',
-    },
-    {
-      title: 'Print etikett',
-      to: '/print-etikett',
-      description: 'Skriv ut etikett når kunden trenger retur- eller sendeetikett.',
-      tag: 'Sending',
-    },
-    {
-      title: 'Uavhentet retur',
-      to: '/uavhentet-retur',
-      description: 'Klargjør pakker som har passert hentefristen og skal i retur.',
-      tag: 'Retur',
-    },
-    {
-      title: 'Feil og avvik',
-      to: '/feil-og-avvik-oversikt',
-      description: 'Start her når noe ikke stemmer i PDA, printer eller lokasjonsflyten.',
-      tag: 'Support',
-    },
-  ]}
-/>
+- [Ta imot sjåfør](./ankomst-sjafor)  
+  Registrer ankomne pakker og gi dem riktig hyllelokasjon.
+- [Levere ut pakke](./utlevering-ordinaer)  
+  Skann hentekode, finn riktig kolli og fullfør utleveringen trygt.
+- [Gjennomføre ID-kontroll](./utlevering-id-kontroll)  
+  Brukes når PDA krever legitimering før pakken kan leveres ut.
+- [Skrive ut etikett](./print-etikett)  
+  Skriv ut etikett når kunden trenger retur- eller sendeetikett.
+- [Klargjøre uavhentet retur](./uavhentet-retur)  
+  Klargjør pakker som har passert hentefristen og skal i retur.
+- [Finne feil og avvik](./feil-og-avvik-oversikt)  
+  Start her når noe ikke stemmer i PDA, printer eller lokasjonsflyten.
 
-## Hva er dette?
+## Før vakten starter
+
+- Kjør hurtigsjekken i [Start arbeidsdagen](./start-dagen) før første kunde eller første levering.
+- Se om PDA viser noe på `Uavhentet retur` eller `Mangler ankomstregistrering`.
+- Bekreft at printeren er koblet til og at hyllekoder er lesbare.
+
+## Hvis noe stopper opp
+
+- [PDA virker ikke](./pda-problemer)  
+  Bruk hard omstart og grunnleggende feilsøking når håndterminalen henger.
+- [Printer skriver ikke ut](./printer-problemer)  
+  Kalibrer, konfigurer på nytt og sjekk papir før du prøver flere ganger.
+- [Pakken mangler lokasjon](./mangler-ankomstregistrering)  
+  Bruk denne flyten når en pakke skal være hos dere, men ikke er registrert riktig.
+
+## Om manualen
 
 - En oppgavebasert manual for daglig drift.
 - En praktisk oversettelse av innholdet i PDF-en `MypackHåndbok V1.1`.
 - Et docs-as-code-oppsett som kan oppdateres fortløpende med nye rutiner og screenshots.
 
-## Målgruppe
+## For deg som oppdaterer manualen
 
-- Butikkmedarbeidere og vikarer som jobber med utlevering og retur.
-- Ansvarlige for oppstart av nye utleveringssteder.
-- Drift og support som trenger en felles referanse.
-
-## Slik bruker du manualen
-
-- Start i riktig oppgave i sidebaren, ikke i gammel kapittelrekkefølge.
-- Følg nummererte steg og stopp ved hvert kontrollpunkt.
-- Bruk feilsidene når PDA eller printer ikke oppfører seg som forventet.
-- Se [Hurtigkort](./hurtigkort) når du trenger en printvennlig oppsummering ved disken eller bakrommet.
-- Legg inn faktiske screenshots fortløpende ved å følge [Screenshots-guide](./screenshots-guide).
+- Oppdater hurtigvalg i denne filen, `docs/intro.mdx`.
+- Les [Redaktørguide](./redaktorguide) før du begynner hvis du ikke jobber teknisk til vanlig.
+- Bruk [Arbeidsflyt for innhold](./content-workflow) når du legger til eller endrer prosedyrer.
+- Oppdater [Screenshot backlog](./screenshot-backlog) når nye bilder mangler eller er lagt inn.
+- Oppdater [Hurtigkort](./hurtigkort) når en av de mest brukte prosedyrene endres.
 
 :::tip Tips
 Nøkkelord i denne håndboken følger ordlyden i PDA-menyene, for eksempel `Ankomst sjåfør`, `Utlevering`, `Sende pakke / Innlevert retur` og `Uavhentet retur`.
 :::
 
-## Hva inneholder manualen?
-
-- Oppstart av arbeidsdagen
-- Mottak og plassering av pakker
-- Ordinær utlevering og utlevering med ID-kontroll
-- Returflyt og manglende ankomstregistrering
-- Utstyr, support og endringslogg
-
 ## Kontakt
 
 Se [Kontakt og support](./kontakt) for telefonnumre og anbefalt eskalering.
 
-## Hvor endrer du hurtigvalg?
+## Relaterte sider
 
-Kortene på denne startsiden oppdateres i denne filen, `docs/intro.mdx`.
+- [Start arbeidsdagen](./start-dagen)
+- [Redaktørguide](./redaktorguide)
+- [Arbeidsflyt for innhold](./content-workflow)
+- [Hurtigkort](./hurtigkort)
 
 :::warning Viktig
 PDF-en som denne manualen bygger på oppgir versjon `V1.1`, men inneholder begrenset detaljert endringshistorikk. Se [Endringslogg](./endringslogg) for hva som er kjent og hva som må fylles inn senere.

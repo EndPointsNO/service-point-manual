@@ -5,7 +5,14 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Start her',
-      items: ['intro', 'hurtigkort', 'screenshots-guide', 'screenshot-backlog'],
+      items: [
+        'intro',
+        'redaktorguide',
+        'content-workflow',
+        'hurtigkort',
+        'screenshots-guide',
+        'screenshot-backlog',
+      ],
     },
     {
       type: 'category',

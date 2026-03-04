@@ -4,50 +4,35 @@ title: Mangler ankomstregistrering
 description: Følg opp pakker som skal være levert til utleveringsstedet, men ikke er registrert i hylle.
 ---
 
-import ProcedureStep from '@site/src/components/ProcedureStep';
-import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
-
 # Mangler ankomstregistrering
 
-<ProcedureIntro
-  whenUsed="Når en pakke skal være hos dere, men ikke er registrert med hyllelokasjon i systemet."
-  goal="Finne pakken fysisk og få den registrert inn på riktig lokasjon, eller markere den som ikke funnet."
-/>
+## Når brukes dette?
+
+Når en pakke skal være hos dere, men ikke er registrert med hyllelokasjon i systemet.
+
+## Mål
+
+Finne pakken fysisk og få den registrert inn på riktig lokasjon, eller markere den som ikke funnet.
 
 ## Steg for steg
 
-<ProcedureStep
-  number={1}
-  title="Finn pakken fysisk"
-  image="/img/pda/mangler-ankomstregistrering-01-finn-pakke.png"
-  alt="TODO: Skjermbilde – liste over pakker som mangler ankomstregistrering"
->
+### Steg 1: Finn pakken fysisk
+
 Bruk avsender, mottaker og kollinummer i listen til å lete i hyller og varemottak.
 
 ![TODO: Skjermbilde – pakke som mangler ankomstregistrering](/img/pda/mangler-ankomstregistrering-01-finn-pakke.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={2}
-  title="Skann pakken og gi den lokasjon"
-  image="/img/pda/mangler-ankomstregistrering-02-skann-pakke.png"
-  alt="TODO: Skjermbilde – skann pakke som manglet lokasjon"
->
+### Steg 2: Skann pakken og gi den lokasjon
+
 Skann pakken og kontroller at linjen blir grønn. Hvis det er mange pakker i skapene, anbefaler PDF-en å skanne over lokasjonen med `Ankomst sjåfør` for å sikre at alle får lokasjon.
 
 ![TODO: Skjermbilde – skann pakke og gi lokasjon](/img/pda/mangler-ankomstregistrering-02-skann-pakke.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={3}
-  title="Marker som ikke funnet eller fullfør"
-  image="/img/pda/mangler-ankomstregistrering-03-ikke-funnet.png"
-  alt="TODO: Skjermbilde – ikke funnet eller fullfør registreringen"
->
+### Steg 3: Marker som ikke funnet eller fullfør
+
 Hvis pakken ikke finnes, velg pakken i listen og bruk `Ikke funnet`. Hvis du fant den, fullfør registreringen med pil tilbake.
 
 ![TODO: Skjermbilde – ikke funnet eller fullfør](/img/pda/mangler-ankomstregistrering-03-ikke-funnet.png)
-</ProcedureStep>
 
 ## Kontrollpunkt
 
@@ -59,10 +44,8 @@ Hvis pakken ikke finnes, velg pakken i listen og bruk `Ikke funnet`. Hvis du fan
 - Pakken ligger på feil lokasjon: bruk [Ankomst sjåfør](./ankomst-sjafor) for å skanne den inn på nytt.
 - Skanneren leser ikke etiketten: se [PDA-problemer](./pda-problemer).
 
-<RelatedLinks
-  links={[
-    {label: 'Ankomst sjåfør', to: '/ankomst-sjafor'},
-    {label: 'PDA-problemer', to: '/pda-problemer'},
-    {label: 'Feil og avvik - oversikt', to: '/feil-og-avvik-oversikt'},
-  ]}
-/>
+## Relaterte sider
+
+- [Ankomst sjåfør](./ankomst-sjafor)
+- [PDA-problemer](./pda-problemer)
+- [Feil og avvik - oversikt](./feil-og-avvik-oversikt)

@@ -4,50 +4,35 @@ title: Print etikett
 description: Skriv ut etikett til kunde for sending eller retur.
 ---
 
-import ProcedureStep from '@site/src/components/ProcedureStep';
-import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
-
 # Print etikett
 
-<ProcedureIntro
-  whenUsed="Når kunden trenger en etikett for å sende en pakke eller levere inn en retur."
-  goal="Skrive ut riktig etikett og avgjøre om kunden bare skal ta den med seg, eller om pakken også skal registreres innlevert med en gang."
-/>
+## Når brukes dette?
+
+Når kunden trenger en etikett for å sende en pakke eller levere inn en retur.
+
+## Mål
+
+Skrive ut riktig etikett og avgjøre om kunden bare skal ta den med seg, eller om pakken også skal registreres innlevert med en gang.
 
 ## Steg for steg
 
-<ProcedureStep
-  number={1}
-  title="Koble håndterminalen til printeren"
-  image="/img/pda/print-etikett-01-skriver-tilkoblet.png"
-  alt="TODO: Skjermbilde – skriver tilkoblet nederst på skjermen"
->
+### Steg 1: Koble håndterminalen til printeren
+
 Kontroller at PDA-en er koblet til etikettprinteren. Nederst på skjermen skal det stå `Skriver tilkoblet`.
 
 ![TODO: Skjermbilde – skriver tilkoblet](/img/pda/print-etikett-01-skriver-tilkoblet.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={2}
-  title="Skann QR-/strekkode eller tast inn referanse"
-  image="/img/pda/print-etikett-02-skann-referanse.png"
-  alt="TODO: Skjermbilde – skann QR-kode eller tast inn referanse"
->
+### Steg 2: Skann QR-/strekkode eller tast inn referanse
+
 Kunden kan oppgi en referanse på seks tegn, for eksempel `ABC123`, eller vise fram QR-/strekkode. Etter skann eller innslag skal etiketten skrives ut.
 
 ![TODO: Skjermbilde – skann referanse](/img/pda/print-etikett-02-skann-referanse.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={3}
-  title="Velg om kunden også skal levere inn pakken"
-  image="/img/pda/print-etikett-03-fortsett-eller-avbryt.png"
-  alt="TODO: Skjermbilde – fortsett til skanne etikett eller avbryt"
->
+### Steg 3: Velg om kunden også skal levere inn pakken
+
 Hvis kunden også skal levere inn pakken, sett ny etikett over gammel etikett og velg `Fortsett til skanne etikett`. Hvis kunden bare skal ha etiketten med seg, velg `Avbryt`.
 
 ![TODO: Skjermbilde – fortsett eller avbryt](/img/pda/print-etikett-03-fortsett-eller-avbryt.png)
-</ProcedureStep>
 
 ## Kontrollpunkt
 
@@ -60,10 +45,8 @@ Hvis kunden også skal levere inn pakken, sett ny etikett over gammel etikett og
 - Ingen utskrift: se [Printer-problemer](./printer-problemer).
 - Kunden vil levere pakken med en gang: gå videre til [Sende pakke / Innlevert retur](./sende-pakke-innlevert-retur).
 
-<RelatedLinks
-  links={[
-    {label: 'Sende pakke / Innlevert retur', to: '/sende-pakke-innlevert-retur'},
-    {label: 'Printer-problemer', to: '/printer-problemer'},
-    {label: 'Screenshots-guide', to: '/screenshots-guide'},
-  ]}
-/>
+## Relaterte sider
+
+- [Sende pakke / Innlevert retur](./sende-pakke-innlevert-retur)
+- [Printer-problemer](./printer-problemer)
+- [Screenshots-guide](./screenshots-guide)

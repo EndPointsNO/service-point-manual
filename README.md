@@ -46,10 +46,15 @@ Hvis dere vil bruke eget domene senere, kan dere:
 
 ## Content workflow
 
+Den operative arbeidsflyten er dokumentert i [docs/content-workflow.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/content-workflow.mdx).
+For kollegaer som ikke jobber teknisk til vanlig, start med [docs/redaktorguide.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/redaktorguide.mdx).
+
+Kortversjon:
+
 1. Start dev-server med `npm start`.
 2. Oppdater eller legg til docs i `docs/`.
-3. Oppdater navigasjon i [sidebars.ts](/Users/philip/Desktop/PN/Håndbok/Webhandbok/sidebars.ts) hvis siden skal vises i sidebaren.
-4. Oppdater relaterte sider, hurtigkort eller screenshot backlog hvis prosedyren endrer seg.
+3. Oppdater `sidebars.ts` hvis navigasjonen endres.
+4. Oppdater [docs/screenshot-backlog.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/screenshot-backlog.mdx) og [docs/hurtigkort.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/hurtigkort.mdx) hvis prosedyren er driftkritisk.
 5. Kjør `npm run build`.
 6. Commit og push til `main` for automatisk deploy.
 

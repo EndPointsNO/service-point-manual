@@ -4,72 +4,47 @@ title: Utlevering med ID-kontroll
 description: Utlevering der mottaker eller fullmektig må legitimeres før signatur.
 ---
 
-import ProcedureStep from '@site/src/components/ProcedureStep';
-import {ProcedureIntro, RelatedLinks} from '@site/src/components/ManualLayout';
-
 # Utlevering med ID-kontroll
 
-<ProcedureIntro
-  whenUsed="Når PDA viser ID Kontroll og krever kontroll av mottaker eller fullmektig før utlevering."
-  goal="Bekrefte riktig identitet før pakken signeres og utleveres."
-/>
+## Når brukes dette?
+
+Når PDA viser `ID Kontroll` og krever kontroll av mottaker eller fullmektig før utlevering.
+
+## Mål
+
+Bekrefte riktig identitet før pakken signeres og utleveres.
 
 ## Steg for steg
 
-<ProcedureStep
-  number={1}
-  title="Skann eller tast inn hentekode"
-  image="/img/pda/utlevering-id-kontroll-01-skann-hentekode.png"
-  alt="TODO: Skjermbilde – hentekode før ID-kontroll"
->
+### Steg 1: Skann eller tast inn hentekode
+
 Start utleveringen på vanlig måte med kundens hentekode eller QR-kode.
 
 ![TODO: Skjermbilde – hentekode før ID-kontroll](/img/pda/utlevering-id-kontroll-01-skann-hentekode.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={2}
-  title="Finn og skann riktig kolli"
-  image="/img/pda/utlevering-id-kontroll-02-skann-kolli.png"
-  alt="TODO: Skjermbilde – skann kolli før ID-kontroll"
->
+### Steg 2: Finn og skann riktig kolli
+
 Finn pakken basert på avsender, mottaker, lokasjon og kollinummer. Skann kolliet til linjen blir grønn og trykk `Fortsett`.
 
 ![TODO: Skjermbilde – skann kolli før ID-kontroll](/img/pda/utlevering-id-kontroll-02-skann-kolli.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={3}
-  title="Utfør ID-kontroll"
-  image="/img/pda/utlevering-id-kontroll-03-id-kontroll.png"
-  alt="TODO: Skjermbilde – ID-kontroll med fødselsnummer eller utenlandsk ID"
->
+### Steg 3: Utfør ID-kontroll
+
 Sjekk at ID stemmer med mottakeren på skjermen. Tast inn de tre siste sifrene i fødselsnummeret, eller bruk knappen for ID uten norsk fødselsnummer. Hvis et annet navn vises i PDA-en, åpne nedtrekksmenyen for å se om fullmakt finnes.
 
 ![TODO: Skjermbilde – utfør ID-kontroll](/img/pda/utlevering-id-kontroll-03-id-kontroll.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={4}
-  title="Ta imot signatur"
-  image="/img/pda/utlevering-id-kontroll-04-signatur.png"
-  alt="TODO: Skjermbilde – signatur etter ID-kontroll"
->
+### Steg 4: Ta imot signatur
+
 Be kunden signere på skjermen når ID-kontrollen er godkjent.
 
 ![TODO: Skjermbilde – signatur etter ID-kontroll](/img/pda/utlevering-id-kontroll-04-signatur.png)
-</ProcedureStep>
 
-<ProcedureStep
-  number={5}
-  title="Trykk OK og lever ut pakken"
-  image="/img/pda/utlevering-id-kontroll-05-levert.png"
-  alt="TODO: Skjermbilde – levert/OK etter ID-kontroll"
->
+### Steg 5: Trykk OK og lever ut pakken
+
 Trykk `OK`. Lever først ut pakken når sluttbildet bekrefter at pakken kan utleveres.
 
 ![TODO: Skjermbilde – levert etter ID-kontroll](/img/pda/utlevering-id-kontroll-05-levert.png)
-</ProcedureStep>
 
 ## Kontrollpunkt
 
@@ -83,10 +58,8 @@ Trykk `OK`. Lever først ut pakken når sluttbildet bekrefter at pakken kan utle
 - Norsk fødselsnummer mangler: bruk alternativet for ID uten norsk fødselsnummer.
 - PDA henger i kontrollbildet: se [PDA-problemer](./pda-problemer).
 
-<RelatedLinks
-  links={[
-    {label: 'Utlevering - oversikt', to: '/utlevering-oversikt'},
-    {label: 'Ordinær utlevering', to: '/utlevering-ordinaer'},
-    {label: 'PDA-problemer', to: '/pda-problemer'},
-  ]}
-/>
+## Relaterte sider
+
+- [Utlevering - oversikt](./utlevering-oversikt)
+- [Ordinær utlevering](./utlevering-ordinaer)
+- [PDA-problemer](./pda-problemer)
