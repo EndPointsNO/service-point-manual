@@ -12,7 +12,7 @@ const isGithubPagesDeploy =
 const config: Config = {
   title: 'PostNord Service Point',
   tagline: 'Praktisk håndbok for Mypack Collect og Service Point-rutiner',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/postnord-app-logo.webp',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -69,7 +69,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/postnord-social-card.png',
     announcementBar: {
       id: 'service-point-branding',
       content:
@@ -127,14 +127,8 @@ const config: Config = {
             {label: 'Endringslogg', to: '/endringslogg'},
           ],
         },
-        {
-          title: 'Om løsningen',
-          items: [
-            {label: 'Bygget med Docusaurus', href: 'https://docusaurus.io/'},
-          ],
-        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} PostNord Service Point.`,
+      copyright: `Copyright © ${new Date().getFullYear()} PostNord Service Point.<br/>Publisert på midlertidig domene (postnord.webhandbok.net) inntil offisielt PostNord-domene er på plass.`,
     },
     prism: {
       theme: prismThemes.github,
