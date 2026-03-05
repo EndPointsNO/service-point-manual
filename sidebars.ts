@@ -7,11 +7,7 @@ const sidebars: SidebarsConfig = {
       label: 'Start her',
       items: [
         'intro',
-        'redaktorguide',
-        'content-workflow',
         'hurtigkort',
-        'screenshots-guide',
-        'screenshot-backlog',
       ],
     },
     {
