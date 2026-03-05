@@ -43,7 +43,8 @@ jobs:
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
-          DOCUSAURUS_DEPLOY_TARGET: github-pages
+          DOCUSAURUS_URL: https://postnord.webhandbok.net
+          DOCUSAURUS_BASE_URL: /
         run: npm run build
 
       - name: Upload Pages artifact
