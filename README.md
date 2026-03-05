@@ -46,15 +46,18 @@ Hvis dere vil bruke eget domene senere, kan dere:
 
 ## Content workflow
 
-Den operative arbeidsflyten er dokumentert i [docs/content-workflow.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/content-workflow.mdx).
-For kollegaer som ikke jobber teknisk til vanlig, start med [docs/redaktorguide.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/redaktorguide.mdx).
+Redaktørguider og arbeidsflyt er flyttet til editoren:
+- `/help/redaktorguide.html`
+- `/help/arbeidsflyt-innhold.html`
+- `/help/screenshots-guide.html`
+- `/help/screenshot-backlog.html`
 
 Kortversjon:
 
 1. Start dev-server med `npm start`.
 2. Oppdater eller legg til docs i `docs/`.
 3. Oppdater `sidebars.ts` hvis navigasjonen endres.
-4. Oppdater [docs/screenshot-backlog.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/screenshot-backlog.mdx) og [docs/hurtigkort.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/hurtigkort.mdx) hvis prosedyren er driftkritisk.
+4. Oppdater [docs/hurtigkort.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/hurtigkort.mdx) hvis prosedyren er driftkritisk.
 5. Kjør `npm run build`.
 6. Commit og push til `main` for automatisk deploy.
 
@@ -70,8 +73,8 @@ Kortversjon:
 1. Lagre bildet i `static/img/pda/`.
 2. Bruk navnekonvensjonen `<side>-<steg>-kortnavn.png`.
 3. Bytt ut TODO-plassholderen i riktig docs-side med faktisk screenshot.
-4. Kryss av i [docs/screenshot-backlog.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/screenshot-backlog.mdx) når bildet er på plass.
-5. Følg [docs/screenshots-guide.mdx](/Users/philip/Desktop/PN/Håndbok/Webhandbok/docs/screenshots-guide.mdx) for detaljer.
+4. Kryss av i editorens backlog-side (`/help/screenshot-backlog.html`) når bildet er på plass.
+5. Følg editorens screenshots-guide (`/help/screenshots-guide.html`) for detaljer.
 6. Kjør `npm run build` for å sjekke at alle bildelenker er gyldige.
 
 ## Hvordan sjekke at lenker er ok

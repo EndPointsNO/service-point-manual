@@ -121,14 +121,8 @@ const config: Config = {
         {
           title: 'Drift',
           items: [
-            {
-              label: 'Screenshots-guide',
-              to: '/screenshots-guide',
-            },
-            {
-              label: 'Screenshot backlog',
-              to: '/screenshot-backlog',
-            },
+            {label: 'Start arbeidsdagen', to: '/start-dagen'},
+            {label: 'Feil og avvik', to: '/feil-og-avvik-oversikt'},
             {label: 'Hurtigkort', to: '/hurtigkort'},
             {label: 'Endringslogg', to: '/endringslogg'},
           ],
