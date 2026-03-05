@@ -1,23 +1,23 @@
 ---
 id: utlevering-ordinaer
 title: Ordinær utlevering
-description: Standard utlevering med hentekode, skann, signatur og OK-bekreftelse.
+description: Standard utlevering med hentekode, skann og OK-bekreftelse.
 ---
 # Ordinær utlevering
 
 ## Når brukes dette?
 
-Når kunden henter en pakke og PDA ikke krever ekstra ID-kontroll utover vanlig utleveringsflyt.
+Når du starter i `Utlevering` og PDA ikke sender deg videre til `ID Kontroll`.
 
 ## Mål
 
-Riktig pakke skal finnes, skannes, signeres og bekreftes før den leveres ut.
+Riktig pakke skal finnes, skannes og bekreftes før den leveres ut.
 
 ## Steg for steg
 
 ### Steg 1: Skann eller tast inn hentekode
 
-Kunden kan vise strekkode, QR-kode eller en femsifret kode. Skann koden med skanneknappen på siden av PDA-en, eller tast den inn manuelt.
+Kunden kan vise QR-/strekkode eller en femsifret hentekode. Skann koden med skanneknappen på siden av PDA-en, eller tast hentekoden inn manuelt.
 
 ![TODO: Skjermbilde – skann hentekode](/img/pda/utlevering-ordinaer-01-skann-eller-tast-inn-hentekode.png)
 
@@ -33,9 +33,9 @@ Når riktig kolli er skannet blir lokasjon og kollinummer grønne, og en grønn 
 
 ![TODO: Skjermbilde – grønn bekreftelse](/img/pda/utlevering-ordinaer-03-gronn-bekreftelse.png)
 
-### Steg 4: Ta imot signatur
+### Steg 4 (ved behov): Ta imot signatur hvis PDA ber om det
 
-Be kunden signere på skjermen. Hvis emballasjen er skadet, bruk `Skade` i signaturbildet før du fortsetter.
+Ordinær utlevering krever normalt ikke signatur. Hvis PDA viser signaturfelt for en forsendelse, be kunden signere før du går videre. Hvis emballasjen er skadet, bruk `Skade` i signaturbildet.
 
 ![TODO: Skjermbilde – signatur](/img/pda/utlevering-ordinaer-04-signatur.png)
 
@@ -48,13 +48,14 @@ Trykk `OK`. Lever først ut pakken når sluttbildet i PDA bekrefter at pakken ka
 ## Kontrollpunkt
 
 - Utlever aldri før linjen blir grønn og du har trykket `Fortsett`.
+- Hvis PDA ber om signatur, må signatur registreres før `OK`.
 - Utlever aldri før `OK` er trykket og leveringsbildet vises.
 - Ved flere kolli til samme kunde kan flere hentekoder legges til etter første kode.
 
 ## Vanlige feil
 
 - Feil pakke hentet fra hyllen: kontroller lokasjon og kollinummer på nytt.
-- Kunden får ikke signert: se [PDA-problemer](./pda-problemer).
+- PDA ber om signatur, men signering fungerer ikke: se [PDA-problemer](./pda-problemer).
 - Pakken finnes ikke der skjermen sier: se [Mangler ankomstregistrering](./mangler-ankomstregistrering).
 
 ## Relaterte sider
