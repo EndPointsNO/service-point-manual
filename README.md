@@ -44,6 +44,14 @@ Hvis dere vil bruke eget domene senere, kan dere:
 2. sette `DOCUSAURUS_BASE_URL` til `'/'` hvis manualen skal ligge på rotdomenet
 3. eventuelt oppdatere DNS og GitHub Pages-innstillingene
 
+## Domenestrategi og sikker drift
+
+- Offentlig manual: `postnord.webhandbok.net`
+- Redaktørflate: `redaktor.postnord.webhandbok.net` (Cloudflare Access + OTP)
+- Redaktørflaten skal ikke indekseres (robots + `X-Robots-Tag`).
+- Redaktør og publisert manual holdes separert på ulike hostnames.
+- Reputasjonssjekk bør kjøres ukentlig i Google Search Console og Microsoft SmartScreen.
+
 ## Content workflow
 
 Redaktørguider og arbeidsflyt er flyttet til editoren:
